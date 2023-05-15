@@ -8,6 +8,7 @@ export const stack = [
     'Tailwind',
     'Styled-components',
     'TDD',
+    'JIRA',
     'Firebase',
     'Context API',
     'Fetch',

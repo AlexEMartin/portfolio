@@ -92,7 +92,7 @@ export default function Home() {
             ))
           }
         </ul>
-        <div className="w-72 flex flex-col mt-6">
+        <div className="w-72 flex flex-col mt-4">
           <Link href="/artist">
             <div className="flex justify-center items-center h-12 m-6 rounded-lg hover:cursor-pointer active:relative active:top-0.5 text-white bg-indigo-400 hover:bg-indigo-500">
               Artist
