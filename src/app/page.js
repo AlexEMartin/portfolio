@@ -1,113 +1,97 @@
-import Image from 'next/image'
+"use client";
+import React, { useEffect } from "react";
+import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Image from "next/image";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
+  return (
+    <main className="flex min-h-screen flex-col items-center bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-indigo-200 via-slate-600 to-indigo-200">
+      <h1 className="font-bold text-3xl mt-12 mb-8 text-gray-100">
+        Alex Martín
+      </h1>
+      <h2 className="text-xl mb-4 tracking-wide text-gray-100">
+        Frontend Engineer
+      </h2>
+      <div className="relative my-8">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          data-aos="fade-right"
+          className="rounded-lg"
+          src="/perfil.jpg"
+          width="400"
+          height="500"
+        />
+        <Image
+          data-aos="fade-right"
+          className="absolute top-0 right-0 p-2"
+          src="/brain-tech.png"
+          width="75"
+          height="75"
+        />
+        <Image
+          data-aos="fade-right"
+          className="absolute top-0 left-0 p-2"
+          src="/dev.png"
+          width="70"
+          height="70"
         />
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+      <p className="w-8/12 mt-8 text-gray-200" data-aos="fade-right">
+        Bienvenidx a mi portfolio! Soy Desarrollador Frontend y actualmente me
+        encuentro trabajando en dos proyectos, una app multi-tenant para
+        gimnasios, y una app de psicoterapia online basada en la evidencia.
+      </p>
+      <p className="w-8/12 mt-8 text-gray-200" data-aos="fade-right">
+        Además de mi aprendizaje y trabajo como desarrollador, soy psicólogo,
+        algo que a simple vista puede parece no relevante como característica
+        para ocupar un puesto en desarrollo. Mi pensamiento es que las
+        habilidades blandas son claves en el mundo tecnológico.
+      </p>
+      <div className="w-full flex justify-center items-center mb-12">
+        <ul
+          className="w-44 mt-8 ml-20 text-gray-200 list-disc"
+          data-aos="fade-right"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <li className="mb-2">HTML</li>
+          <li className="mb-2">CSS</li>
+          <li className="mb-2">JS</li>
+          <li className="mb-2">React</li>
+          <li className="mb-2">Next js</li>
+          <li className="mb-2">Tailwind</li>
+          <li className="mb-2">Styled Components</li>
+          <li className="mb-2">Firebase</li>
+          <li className="mb-2">Context API</li>
+          <li className="mb-2">Redux</li>
+          <li className="mb-2">Fetch</li>
+        </ul>
+        <div className="w-72 flex flex-col mt-6">
+          <Link href="/artist">
+            <div className="flex justify-center items-center h-12 m-6 rounded-lg hover:cursor-pointer active:relative active:top-0.5 text-white bg-indigo-400 hover:bg-indigo-500">
+              Lucio
+            </div>
+          </Link>
+          <Link href="/ecommerce">
+            <div className="flex justify-center items-center h-12 m-6 rounded-lg hover:cursor-pointer active:relative active:top-0.5 text-white bg-indigo-400 hover:bg-indigo-500">
+              Ecommerce
+            </div>
+          </Link>
+          <Link href="/movies_app">
+            <div className="flex justify-center items-center h-12 m-6 rounded-lg hover:cursor-pointer active:relative active:top-0.5 text-white bg-indigo-400 hover:bg-indigo-500">
+              Movies
+            </div>
+          </Link>
+          <Link href="/crm">
+            <div className="flex justify-center items-center h-12 m-6 rounded-lg hover:cursor-pointer active:relative active:top-0.5 text-white bg-indigo-400 hover:bg-indigo-500">
+              CRM
+            </div>
+          </Link>
+        </div>
       </div>
     </main>
-  )
+  );
 }
