@@ -59,7 +59,7 @@ export default function Home() {
       <p className="w-8/12 mt-8 text-gray-200" data-aos="fade-right">
         Bienvenidx a mi portfolio! Soy Desarrollador Frontend y actualmente me
         encuentro trabajando en dos proyectos, una app multi-tenant para
-        gimnasios, y una app de psicoterapia online basada en la evidencia.
+        gimnasios, y una app de psicoterapia online basada en evidencia.
       </p>
       <p className="w-8/12 mt-8 text-gray-200" data-aos="fade-right">
         Además de mi aprendizaje y trabajo como desarrollador, soy psicólogo,
