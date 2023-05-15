@@ -10,6 +10,20 @@ export default function Home() {
     AOS.init({ duration: 1200 });
   }, []);
 
+  const downloadResume = () => {
+    fetch("Resume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Resume.pdf";
+        alink.click();
+      });
+    });
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-indigo-200 via-slate-600 to-indigo-200">
       <h1 className="font-bold text-3xl mt-12 mb-8 text-gray-100">
@@ -54,7 +68,17 @@ export default function Home() {
       </p>
       <p className="w-8/12 mt-8 text-gray-200" data-aos="fade-right">
         Si mi perfil te resulta de interés, estaré encantado de conocerte.
-        <a className="font-bold" href="mailto:alexeusebiomartin@gmail.com"> Escríbeme.</a>
+        <a className="font-bold" href="mailto:alexeusebiomartin@gmail.com">
+          {" "}
+          Escríbeme.
+        </a>
+      </p>
+      <p
+        onClick={downloadResume}
+        className="w-8/12 mt-8 text-gray-200 font-bold hover:cursor-pointer"
+        data-aos="fade-right"
+      >
+        Download Resume.
       </p>
       <div className="w-full flex justify-center items-center mb-12">
         <ul

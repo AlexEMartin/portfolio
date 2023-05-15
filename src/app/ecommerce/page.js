@@ -14,7 +14,7 @@ const Ecommerce = () => {
       </h1>
       <Slider />
       <h2 className="mt-16 text-xl text-white font-bold mt-8">
-        React / Firebase / Styled-components
+        React / Firebase / Styled-components / API / Fetch
       </h2>
       <Link
         className="mt-16 text-xl text-white font-bold mt-12 hover:opacity-70 transition-all duration-200 ease-in mb-20"
