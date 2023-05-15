@@ -36,7 +36,7 @@ export default function Home() {
       <div className="relative my-8">
         <Image
           data-aos="fade-right"
-          className="rounded-lg"
+          className="rounded-lg border-4 border-white"
           src="/perfil.jpg"
           width="400"
           height="500"
