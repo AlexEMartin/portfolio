@@ -62,6 +62,7 @@ export default function Home() {
           <li className="mb-2">JS</li>
           <li className="mb-2">React</li>
           <li className="mb-2">Next js</li>
+          <li className="mb-2">TypeScript</li>
           <li className="mb-2">Tailwind</li>
           <li className="mb-2">Styled Components</li>
           <li className="mb-2">Firebase</li>
@@ -72,7 +73,7 @@ export default function Home() {
         <div className="w-72 flex flex-col mt-6">
           <Link href="/artist">
             <div className="flex justify-center items-center h-12 m-6 rounded-lg hover:cursor-pointer active:relative active:top-0.5 text-white bg-indigo-400 hover:bg-indigo-500">
-              Lucio
+              Artist
             </div>
           </Link>
           <Link href="/ecommerce">
