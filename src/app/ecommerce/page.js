@@ -13,7 +13,7 @@ const Ecommerce = () => {
         E-Commerce
       </h1>
       <Slider />
-      <h2 className="mt-16 text-xl text-white font-bold mt-8">
+      <h2 className="mt-16 text-xl text-white font-bold text-center px-12">
         React / Firebase / Styled-components / API / Fetch
       </h2>
       <Link
