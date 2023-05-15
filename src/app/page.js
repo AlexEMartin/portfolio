@@ -4,7 +4,7 @@ import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
-import { stack } from '../components/stack';
+import { stack } from "../components/stack";
 
 export default function Home() {
   useEffect(() => {
@@ -30,7 +30,7 @@ export default function Home() {
       <h1 className="font-bold text-3xl mt-12 mb-8 text-gray-100">
         Alex Martín
       </h1>
-      <h2 className="text-xl mb-4 tracking-wide text-gray-100 hover:text-white">
+      <h2 className="text-xl mb-4 tracking-wide text-gray-100 hover:text-white font-bold">
         Frontend Engineer
       </h2>
       <div className="relative my-8">
@@ -69,14 +69,17 @@ export default function Home() {
       </p>
       <p className="w-8/12 mt-8 text-gray-200" data-aos="fade-right">
         Si mi perfil te resulta de interés, estaré encantado de conocerte.
-        <a className="font-bold" href="mailto:alexeusebiomartin@gmail.com">
+        <a
+          className="font-bold text-white"
+          href="mailto:alexeusebiomartin@gmail.com"
+        >
           {" "}
           Escríbeme.
         </a>
       </p>
       <p
         onClick={downloadResume}
-        className="w-8/12 mt-8 text-gray-200 font-bold hover:cursor-pointer"
+        className="w-8/12 mt-8 text-gray-200 font-bold hover:cursor-pointer text-white"
         data-aos="fade-right"
       >
         Download Resume.
@@ -86,13 +89,16 @@ export default function Home() {
           className="w-52 mt-8 ml-12 text-gray-200 list-disc"
           data-aos="fade-right"
         >
-          {
-            stack.map((i) => (
-              <li key={i} className="mb-2 hover:text-white">{i}</li>
-            ))
-          }
+          {stack.map((i) => (
+            <li key={i} className="mb-2 hover:text-white">
+              {i}
+            </li>
+          ))}
         </ul>
         <div className="w-72 flex flex-col mt-4">
+          <h2 className="animate-bounce text-center text-white font-bold tracking-wide">
+            Projects
+          </h2>
           <Link href="/artist">
             <div className="flex justify-center items-center h-12 m-6 rounded-lg hover:cursor-pointer active:relative active:top-0.5 text-white bg-indigo-400 hover:bg-indigo-500">
               Artist
