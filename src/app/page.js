@@ -56,18 +56,18 @@ export default function Home() {
           height="70"
         />
       </div>
-      <p className="w-8/12 mt-8 text-gray-300" data-aos="fade-right">
+      <p className="w-8/12 mt-8 text-white" data-aos="fade-right">
         Bienvenidx a mi portfolio! Soy Desarrollador Frontend y actualmente me
         encuentro trabajando en dos proyectos, una app multi-tenant para
         gimnasios, y una app de psicoterapia online basada en evidencia.
       </p>
-      <p className="w-8/12 mt-8 text-gray-300" data-aos="fade-right">
+      <p className="w-8/12 mt-8 text-white" data-aos="fade-right">
         Además de mi aprendizaje y trabajo como desarrollador, soy psicólogo,
         algo que a simple vista puede parecer no relevante como característica
         para ocupar un puesto en desarrollo. Mi pensamiento es que las
         habilidades blandas son claves en el mundo tecnológico.
       </p>
-      <p className="w-8/12 mt-8 text-gray-300" data-aos="fade-right">
+      <p className="w-8/12 mt-8 text-white" data-aos="fade-right">
         Si mi perfil te resulta de interés, estaré encantado de conocerte.
         <a
           className="font-bold text-white"
