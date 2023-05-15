@@ -9,7 +9,7 @@ const Crm = () => {
           Home
         </h4>
       </Link>
-      <h1 className="mt-32 text-2xl text-white font-bold">CRM Tienda Alohadones</h1>
+      <h1 className="mt-32 text-2xl text-white font-bold">CRM Tienda Almohadones</h1>
       <Slider />
       <h2 className="mt-16 text-xl text-white font-bold mt-8">
         Django / Postgres
