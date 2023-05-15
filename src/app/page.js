@@ -4,6 +4,7 @@ import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
+import { stack } from '../components/stack';
 
 export default function Home() {
   useEffect(() => {
@@ -85,20 +86,13 @@ export default function Home() {
           className="w-52 mt-8 ml-12 text-gray-200 list-disc"
           data-aos="fade-right"
         >
-          <li className="mb-2">HTML</li>
-          <li className="mb-2">CSS</li>
-          <li className="mb-2">JS</li>
-          <li className="mb-2">React</li>
-          <li className="mb-2">Next js</li>
-          <li className="mb-2">TypeScript</li>
-          <li className="mb-2">Tailwind</li>
-          <li className="mb-2">Styled Components</li>
-          <li className="mb-2">Firebase</li>
-          <li className="mb-2">Context API</li>
-          <li className="mb-2">Redux</li>
-          <li className="mb-2">Fetch</li>
+          {
+            stack.map((i) => (
+              <li key={i} className="mb-2">{i}</li>
+            ))
+          }
         </ul>
-        <div className="w-72 flex flex-col mt-4">
+        <div className="w-72 flex flex-col mt-6">
           <Link href="/artist">
             <div className="flex justify-center items-center h-12 m-6 rounded-lg hover:cursor-pointer active:relative active:top-0.5 text-white bg-indigo-400 hover:bg-indigo-500">
               Artist
