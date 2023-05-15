@@ -30,7 +30,7 @@ export default function Home() {
       <h1 className="font-bold text-3xl mt-12 mb-8 text-gray-100">
         Alex Martín
       </h1>
-      <h2 className="text-xl mb-4 tracking-wide text-gray-100">
+      <h2 className="text-xl mb-4 tracking-wide text-gray-100 hover:text-white">
         Frontend Engineer
       </h2>
       <div className="relative my-8">
@@ -88,7 +88,7 @@ export default function Home() {
         >
           {
             stack.map((i) => (
-              <li key={i} className="mb-2">{i}</li>
+              <li key={i} className="mb-2 hover:text-white">{i}</li>
             ))
           }
         </ul>
