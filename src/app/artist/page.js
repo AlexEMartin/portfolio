@@ -24,7 +24,7 @@ const Artist = () => {
         passHref={true}
       >
         <h1 className="text-2xl hover:opacity-70 font-bold transition-all duration-200 ease-in">
-          Sitio web para un gran Artista
+          Artistic website
         </h1>
       </Link>
       <Image
@@ -41,7 +41,7 @@ const Artist = () => {
         target="_blank"
         passHref={true}
       >
-        Repositorio
+        Repo
       </Link>
     </div>
   );

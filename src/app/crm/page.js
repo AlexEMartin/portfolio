@@ -9,7 +9,7 @@ const Crm = () => {
           Home
         </h4>
       </Link>
-      <h1 className="mt-32 text-2xl font-bold">CRM Tienda Almohadones</h1>
+      <h1 className="mt-32 text-2xl font-bold">Shop Deco CRM</h1>
       <Slider />
       <h2 className="mt-8 text-lg font-bold mt-8">Django / Postgres</h2>
       <Link
@@ -19,7 +19,7 @@ const Crm = () => {
         target="_blank"
         passHref={true}
       >
-        Repositorio
+        Repo
       </Link>
     </div>
   );

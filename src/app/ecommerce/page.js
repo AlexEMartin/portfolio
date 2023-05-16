@@ -21,7 +21,7 @@ const Ecommerce = () => {
         target="_blank"
         passHref={true}
       >
-        Repositorio
+        Repo
       </Link>
     </div>
   );

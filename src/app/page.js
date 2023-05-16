@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -10,6 +10,8 @@ export default function Home() {
   useEffect(() => {
     AOS.init({ duration: 1200 });
   }, []);
+
+  const [english, setEnglish] = useState(false);
 
   const downloadResume = () => {
     fetch("Resume.pdf").then((response) => {
@@ -72,13 +74,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="relative my-2">
+      <div className="relative my-4">
         <Image
           data-aos="fade-right"
           className="rounded-lg border-8 border-indigo-400"
           src="/perfil.jpg"
           width="300"
           height="400"
+          alt="profile"
         />
         <div
           data-aos="fade-right"
@@ -89,6 +92,7 @@ export default function Home() {
             src="/brain-tech.png"
             width="50"
             height="60"
+            alt="brain"
           />
         </div>
         <div
@@ -100,25 +104,47 @@ export default function Home() {
             src="/dev.png"
             width="42"
             height="70"
+            alt="dev"
           />
         </div>
       </div>
+      <div className="w-8/12 mt-16 relative" data-aos="fade-right">
+        <div className="absolute top-0 left-0 -mt-12 flex">
+          <span
+            onClick={() => setEnglish(false)}
+            className={`mr-2 hover:cursor-pointer ${
+              english ? "" : "font-bold"
+            }`}
+          >
+            Español
+          </span>
+          |
+          <span
+            onClick={() => setEnglish(true)}
+            className={`ml-2 hover:cursor-pointer ${
+              english ? "font-bold" : ""
+            }`}
+          >
+            English
+          </span>
+        </div>
+        {english
+          ? "Welcome to my portfolio! I'm a Frontend Developer currently working on two projects, a multi-tenant app for gyms, and an evidence-based online psychotherapy app."
+          : "Bienvenidx a mi portfolio! Soy Desarrollador Frontend y actualmente me encuentro trabajando en dos proyectos, una app multi-tenant para gimnasios, y una app de psicoterapia online basada en evidencia."}
+      </div>
       <p className="w-8/12 mt-8" data-aos="fade-right">
-        Bienvenidx a mi portfolio! Soy Desarrollador Frontend y actualmente me
-        encuentro trabajando en dos proyectos, una app multi-tenant para
-        gimnasios, y una app de psicoterapia online basada en evidencia.
-      </p>
-      <p className="w-8/12 mt-8" data-aos="fade-right">
-        Además de mi aprendizaje y trabajo como desarrollador, soy psicólogo,
-        algo que a simple vista puede parecer no relevante como característica
-        para ocupar un puesto en desarrollo. Mi pensamiento es que las
-        habilidades blandas son claves en el mundo tecnológico.
+        {english
+          ? "In addition to my learning process and working experience as a developer, I am a psychologist, something that at first sight may not seem relevant as a background to fill a development position. I believe that soft skills are key in IT."
+          : "Además de mi aprendizaje y trabajo como desarrollador, soy psicólogo, algo que a simple vista puede parecer no relevante como característica para ocupar un puesto en desarrollo. Mi pensamiento es que las habilidades blandas son claves en el mundo IT."}
       </p>
       <p className="w-8/12 mt-8">
-        Si mi perfil te resulta de interés, estaré encantado de conocerte.
+        {english
+          ? "If my profile seems interesting to you, I will be happy to meet up."
+          : " Si mi perfil te resulta de interés, estaré encantado de conocerte."}
+
         <a className="font-bold" href="mailto:alexeusebiomartin@gmail.com">
           {" "}
-          Escríbeme.
+          {english ? "Email me." : "Escríbeme."}
         </a>
       </p>
       <p
