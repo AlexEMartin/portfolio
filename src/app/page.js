@@ -80,20 +80,18 @@ export default function Home() {
           width="300"
           height="400"
         />
-        <Image
+        <div
           data-aos="fade-right"
-          className="absolute top-0 right-0 p-3"
-          src="/brain-tech.png"
-          width="65"
-          height="60"
-        />
-        <Image
+          className="bg-yellow-400 p-3 rounded-full absolute top-0 right-0 mt-12 -mr-6 border border-black shadow-2xl"
+        >
+          <Image src="/brain-tech.png" width="50" height="60" />
+        </div>
+        <div
           data-aos="fade-right"
-          className="absolute top-0 left-0 p-3"
-          src="/dev.png"
-          width="60"
-          height="70"
-        />
+          className="absolute top-0 left-0 -mt-4 -ml-4 bg-yellow-400 p-3 rounded-full border border-black shadow-2xl"
+        >
+          <Image src="/dev.png" width="42" height="70" />
+        </div>
       </div>
       <p className="w-8/12 mt-8" data-aos="fade-right">
         Bienvenidx a mi portfolio! Soy Desarrollador Frontend y actualmente me
