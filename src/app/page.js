@@ -115,9 +115,9 @@ export default function Home() {
       </p>
       <p
         onClick={downloadResume}
-        className="w-8/12 mt-8 mb-32 font-bold hover:cursor-pointer animate-bounce"
+        className="w-full text-center mt-12 mb-32 font-bold hover:cursor-pointer animate-bounce"
       >
-        Download Resume.
+        Download Resume
       </p>
     </main>
   );
