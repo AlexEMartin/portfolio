@@ -4,6 +4,7 @@ export const stack = [
     'JS',
     'React',
     'Nextjs',
+    'GIT',
     'TypeScript',
     'Tailwind',
     'Styled-components',
