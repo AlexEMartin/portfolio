@@ -32,7 +32,7 @@ export default function Home() {
         Frontend Engineer
       </h2>
       <ul
-        className="w-10/12 md:w-6/12 flex justify-center items-center row flex-wrap mt-8 list-disc"
+        className="w-10/12 md:w-6/12 text-sm md:text-base flex justify-center items-center row flex-wrap mt-8 list-disc"
         data-aos="fade-right"
       >
         {stack.map((i) => (
