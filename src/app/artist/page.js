@@ -33,6 +33,7 @@ const Artist = () => {
         src="/lucio.jpg"
         width="400"
         height="500"
+        alt='cousin'
       />
       <Link
         className="mt-16 text-xl hover:opacity-70 font-bold mt-4 transition-all duration-200 ease-in"
