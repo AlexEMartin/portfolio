@@ -5,6 +5,7 @@ export const stack = [
     'React',
     'Nextjs',
     'GIT',
+    'Postman',
     'TypeScript',
     'Tailwind',
     'Styled-components',
