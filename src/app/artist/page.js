@@ -29,11 +29,12 @@ const Artist = () => {
       </Link>
       <Image
         data-aos="fade-right"
-        className="rounded-lg object-cover mt-6"
         src="/lucio.jpg"
-        width="400"
-        height="500"
-        alt='cousin'
+        width="0"
+        height="0"
+        sizes="100vw"
+        className="w-full md:w-5/12 h-auto rounded-lg object-cover mt-6"
+        alt="lucio"
       />
       <Link
         className="mt-16 text-xl hover:opacity-70 font-bold mt-4 transition-all duration-200 ease-in"

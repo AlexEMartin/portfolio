@@ -88,10 +88,11 @@ export default function Home() {
           className="bg-yellow-400 p-3 rounded-full absolute top-0 right-0 mt-12 -mr-6 border border-black shadow-2xl"
         >
           <Image
-            className="hover:animate-spin hover:cursor-pointer"
+            className="w-12 hover:animate-spin hover:cursor-pointer"
             src="/brain-tech.png"
-            width="50"
-            height="60"
+            width="0"
+            height="0"
+            sizes="100vw"
             alt="brain"
           />
         </div>
@@ -100,10 +101,11 @@ export default function Home() {
           className="absolute top-0 left-0 -mt-4 -ml-4 bg-yellow-400 p-3 rounded-full border border-black shadow-2xl"
         >
           <Image
-            className="hover:animate-spin hover:cursor-pointer"
+            className="w-10 hover:animate-spin hover:cursor-pointer"
             src="/dev.png"
-            width="42"
-            height="70"
+            width="0"
+            height="0"
+            sizes="100vw"
             alt="dev"
           />
         </div>
