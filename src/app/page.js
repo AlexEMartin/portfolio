@@ -28,7 +28,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center text-gray-600">
+    <main className="bg-indigo-300 flex min-h-screen flex-col items-center text-gray-600">
       <h1 className="font-bold text-3xl mt-12 mb-8">Alex Martín</h1>
       <h2 className="text-xl mb-4 tracking-wide font-bold">
         Frontend Engineer
