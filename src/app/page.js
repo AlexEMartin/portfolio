@@ -28,13 +28,13 @@ export default function Home() {
   };
 
   return (
-    <main className="bg-indigo-300 flex min-h-screen flex-col items-center text-gray-600">
+    <main className="bg-indigo-300 flex min-h-screen flex-col items-center text-lg text-gray-600">
       <h1 className="font-bold text-3xl mt-12 mb-8">Alex Martín</h1>
       <h2 className="text-xl mb-4 tracking-wide font-bold">
         Frontend Engineer
       </h2>
       <ul
-        className="w-10/12 md:w-6/12 text-sm md:text-base flex justify-center items-center row flex-wrap mt-8 list-disc"
+        className="w-10/12 md:w-6/12 text-md md:text-base flex justify-center items-center row flex-wrap mt-8 list-disc"
         data-aos="fade-right"
       >
         {stack.map((i) => (
