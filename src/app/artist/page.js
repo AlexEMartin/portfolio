@@ -25,7 +25,7 @@ const Artist = () => {
         alt="dev"
       />
       <Link
-        className="h-12 mt-4 z-10"
+        className="h-12 mt-20 z-10"
         href="https://luciobaglivo.com"
         rel="noopener noreferrer"
         target="_blank"
