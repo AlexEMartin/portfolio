@@ -74,13 +74,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="relative my-4">
+      <div className="relative my-4 lg:w-3/12 md:w-5/12 w-9/12">
         <Image
           data-aos="fade-right"
-          className="rounded-lg border-8 border-indigo-400"
+          className="mx-auto rounded-lg border-8 border-indigo-400 w-full"
           src="/perfil.jpg"
-          width="300"
-          height="400"
+          width={1000}
+          height={1000}
           alt="profile"
         />
         <div
@@ -90,9 +90,8 @@ export default function Home() {
           <Image
             className="w-12 hover:animate-spin hover:cursor-pointer"
             src="/brain-tech.png"
-            width="0"
-            height="0"
-            sizes="100vw"
+            width={1000}
+            height={1000}
             alt="brain"
           />
         </div>
@@ -103,9 +102,8 @@ export default function Home() {
           <Image
             className="w-10 hover:animate-spin hover:cursor-pointer"
             src="/dev.png"
-            width="0"
-            height="0"
-            sizes="100vw"
+            width={1000}
+            height={1000}
             alt="dev"
           />
         </div>
